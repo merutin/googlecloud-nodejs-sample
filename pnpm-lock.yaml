@@ -11,6 +11,12 @@ importers:
       '@google-cloud/local-auth':
         specifier: ^3.0.1
         version: 3.0.1
+      '@googleapis/calendar':
+        specifier: ^9.7.9
+        version: 9.7.9
+      '@googleapis/chat':
+        specifier: ^32.0.0
+        version: 32.0.0
       '@googleapis/sheets':
         specifier: ^9.3.1
         version: 9.3.1
@@ -27,6 +33,14 @@ packages:
   '@google-cloud/local-auth@3.0.1':
     resolution: {integrity: sha512-YJ3GFbksfHyEarbVHPSCzhKpjbnlAhdzg2SEf79l6ODukrSM1qUOqfopY232Xkw26huKSndyzmJz+A6b2WYn7Q==}
     engines: {node: '>=14.0.0'}
+
+  '@googleapis/calendar@9.7.9':
+    resolution: {integrity: sha512-s1dD/j+WtJpdJ7dxmJL1NeSSvoO4D+hcGqSGw4+UtEUpGgBmmlE9Ptxf04cRj1T9Y2xEUfhszKI87+rgxcW2iA==}
+    engines: {node: '>=12.0.0'}
+
+  '@googleapis/chat@32.0.0':
+    resolution: {integrity: sha512-K/YDmUq0O+IFh32zmt7Nn+frPDWO3t70aLfN9GT8WKT7fPEFYUqwM0F+oVm7meupatFvygsyRVyE6NnTsiiy0g==}
+    engines: {node: '>=12.0.0'}
 
   '@googleapis/sheets@9.3.1':
     resolution: {integrity: sha512-nPgzOiDs/FSFhE+dX2KfkmsmkXM3WfXYP06FoW8cXvHshwxHSI3FbXwe5XJYstDAWXP9YA7AMSvmwnuD4OAl2w==}
@@ -219,6 +233,20 @@ snapshots:
       google-auth-library: 9.14.2
       open: 7.4.2
       server-destroy: 1.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
+  '@googleapis/calendar@9.7.9':
+    dependencies:
+      googleapis-common: 7.2.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
+  '@googleapis/chat@32.0.0':
+    dependencies:
+      googleapis-common: 7.2.0
     transitivePeerDependencies:
       - encoding
       - supports-color
